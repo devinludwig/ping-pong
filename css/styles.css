@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Sports";
+  src: url(fonts/SFSportsNight.ttf);
+  format: ("truetype");
+}
+
+h1 {
+  font-family: "Sports";
+  font-size: 120px;
+  color: white;
+  text-align: center;
+}
+
+ul {
+  display: none;
+  float: left;
+  background-color: #ffff80;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.ping, .pong, .pingpong {
+  font-style: bolder , underline;
+}
+
+.ping {
+  color: #00e699;
+}
+
+.pong {
+  color: #ff0000;
+}
+
+.pingpong {
+  color: #5500ff;
+}
