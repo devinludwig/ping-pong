@@ -1,7 +1,25 @@
+body {
+  background-image: url(../img/pingpong.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+}
+
 @font-face {
   font-family: "Sports";
   src: url(fonts/SFSportsNight.ttf);
   format: ("truetype");
+}
+
+label {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+label , input , button {
+  font-size: 30px
 }
 
 h1 {
@@ -13,24 +31,27 @@ h1 {
 
 li{
   display: none;
+  float: left;
+  padding: inherit;
+  font-size: 20px;
+
 }
 
 ul {
   display: none;
   float: left;
-  background-color: #ffff80;
-  padding-top: 20px;
-  padding-right: 20px;
-  width: 200px;
+  background-color: rgba(241, 210, 55, .5);
+  padding: 20px;
+  width: 100%;
 }
 
 .ping, .pong, .pingpong {
   font-style: bolder;
-  font-style: underline;
 }
 
 #ping, #pong, #pingpong {
   display: none;
+  color: white;
 }
 
 .ping {
@@ -44,3 +65,15 @@ ul {
 .pingpong {
   color: #5500ff;
 }
+
+#green , #ball {
+  width: 33%;
+  float: left;
+  opacity: .5;
+}
+
+ #red {
+   float: right;
+   width: 33%;
+   opacity: .5;
+ }

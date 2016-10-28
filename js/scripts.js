@@ -21,11 +21,23 @@ $(function() {
   $('form').submit(function(event) {
     event.preventDefault();
     $('.result').empty().fadeIn();
+    $('#pingpong, #ping, #pong').hide();
+
     var input = $('input').val();
     count(input);
     $('.result').append(array);
     $("li").each(function(i) {
-    $(this).delay(100 * i).fadeIn(1000);
-    });
+      $(this).delay(400 * i).fadeIn();
+        if ($(this).attr("class") === "ping"){
+        $("#ping").delay(400 * i).fadeIn();
+        // $("#pong , #pingpong").fadeOut();
+      } else if ($(this).attr("class") === "pong") {
+        $("#pong").delay(400*i).fadeIn();
+        // $("#ping , #pingpong").fadeOut();
+      }  else if ($(this).attr("class") === "pingpong") {
+        $("#pingpong").delay(400*i).fadeIn();
+        // $("#ping #pong").fadeOut();
+    };
+  });
   });
 });
