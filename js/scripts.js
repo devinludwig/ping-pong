@@ -5,13 +5,13 @@ var count = function(number) {
   array = [];
   for (var index = 1; index <= number; index ++) {
     if (index % 15 === 0) {
-      array.push("ping-pong");
+      array.push("<li>ping-pong</li>");
     } else if (index % 3 === 0) {
-      array.push("ping");
+      array.push("<li>ping</li>");
     } else if (index % 5 === 0) {
-      array.push("pong");
+      array.push("<li>pong</li>");
     } else {
-      array.push(index);
+      array.push("<li>" + index + "</li>");
     }
   }
   return(array);
