@@ -12,16 +12,20 @@ var count = function(number) {
       array.push("<li class='pong'>pong</li>");
     } else {
       array.push("<li>" + index + "</li>");
-    }
-  }
+    };
+  };
   return(array);
-}
+};
 
 $(function() {
   $('form').submit(function(event) {
     event.preventDefault();
-    $('.result').empty().show();
+    $('.result').empty().fadeIn();
     var input = $('input').val();
-    $('.result').append(count(input));
+    count(input);
+    $('.result').append(array);
+    $("li").each(function(i) {
+    $(this).delay(100 * i).fadeIn(1000);
+    });
   });
 });

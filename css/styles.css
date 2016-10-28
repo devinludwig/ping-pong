@@ -11,16 +11,26 @@ h1 {
   text-align: center;
 }
 
+li{
+  display: none;
+}
+
 ul {
   display: none;
   float: left;
   background-color: #ffff80;
   padding-top: 20px;
   padding-right: 20px;
+  width: 200px;
 }
 
 .ping, .pong, .pingpong {
-  font-style: bolder , underline;
+  font-style: bolder;
+  font-style: underline;
+}
+
+#ping, #pong, #pingpong {
+  display: none;
 }
 
 .ping {
